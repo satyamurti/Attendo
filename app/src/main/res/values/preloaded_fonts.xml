@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aladin</item>
+        <item>@font/boogaloo</item>
+        <item>@font/cabin_semibold</item>
+        <item>@font/comfortaa</item>
+    </array>
+</resources>

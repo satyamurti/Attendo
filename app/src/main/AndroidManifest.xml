@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.attendo2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Attendo"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".Resources0" />
+        <activity android:name=".Resources" />
+        <activity android:name=".KafleSubjects" />
+        <activity android:name=".Information" />
+        <activity android:name=".CRActivity2" />
+        <activity android:name=".CRActivitySheet" />
+        <activity android:name=".BHICHWALA" />
+        <activity android:name=".TakeattendanceCR" />
+        <activity android:name=".CRDashboard" />
+        <activity android:name=".CRLogin" />
+        <activity android:name=".SignUpForm" />
+        <activity android:name=".GenerateTodaysATD" />
+        <activity android:name=".ShowAttendanceStudent2" />
+        <activity android:name=".adminattendance" />
+        <activity android:name=".loginteacherActivity" />
+        <activity android:name=".loginstudent" />
+        <activity android:name=".adminLoginActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".teacherlogin" />
+        <activity android:name=".studentlogin" />
+        <activity android:name=".adminlogin" />
+        <activity android:name=".addteacher" />
+        <activity android:name=".addstudent" />
+        <activity android:name=".takeAttendance" />
+        <activity android:name=".admin_attendanceSheet" />
+        <activity android:name=".teacher_attendanceSheet" />
+        <activity android:name=".student_attendance_sheet" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".NotifiactionMessengingClass"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

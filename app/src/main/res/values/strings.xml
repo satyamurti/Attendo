@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Attendo</string>
+    <string name="submit">Submit</string>
+    <string name="name_string">Name</string>
+    <string name="attendance_string">attendance</string>
+    <string name="subjectinitial">Select Subject Here</string>
+    <array name="classes">
+
+        <item>CSE</item>
+        <item>CHEM</item>
+        <item>PROD</item>
+        <item>MECH</item>
+        <item>ECE</item>
+
+    </array>
+    <array name="periods">
+
+        <item>p1</item>
+        <item>p2</item>
+        <item>p3</item>
+        <item>p4</item>
+
+
+    </array>
+    <array name="subjects">
+        <item>Select Subject</item>
+        <item>CSPC</item>
+        <item>MAIR22</item>
+        <item>HSIR11</item>
+        <item>CSIR21</item>
+        <item>CHIR11</item>
+        <item>CHIR12</item>
+        <item>MEIR12</item>
+
+    </array>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#30343F"
+    app:titleTextColor="@android:color/white"
+    android:layout_height="60dp"
+    app:subtitleTextColor="#fff">
+
+</Toolbar>

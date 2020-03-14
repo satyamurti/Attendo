@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BHICHWALA"
+    android:background="#181818">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:text="Select Class And Subject And Date 😃"
+        android:textColor="#fff"
+        android:layout_marginRight="39dp"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner2CRD"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/spinner"
+        android:entries="@array/classes"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        tools:layout_editor_absoluteX="8dp" />
+    <Spinner
+        android:id="@+id/spinner3CRD"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/spinner"
+        android:entries="@array/subjects"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        tools:layout_editor_absoluteX="8dp" />
+
+        <Button
+            android:id="@+id/date3CRD"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerSubject5"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/date2"
+            android:ems="10"
+            android:fontFamily="@font/comfortaa"
+            android:hint="Select Date"
+            android:inputType="textPersonName"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+
+            />
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+
+            ></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:fontFamily="@font/comfortaa"
+            android:background="@drawable/button1"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:onClick="Gotoatt"
+            ></Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

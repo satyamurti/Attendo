@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010101"
+    tools:context=".Information">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_viewInfo"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        app:lottie_fileName="aboutapp.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/infotext1"
+        android:layout_width="335dp"
+        android:layout_height="268dp"
+        android:layout_below="@id/animation_viewInfo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="This app makes life easy for students by helping them to check their attendance in a single click and for teachers and class representatives by reducing all the paper work. This app maintains all data in an online secure database. It also creates an offline copy of the attendance if required. "
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infotext1"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:text="Created By Satyamurti"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        ></TextView>
+
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="268dp"-->
+<!--        android:layout_marginBottom="121dp"-->
+<!--        android:background="@drawable/mylogo" />-->
+
+
+</RelativeLayout>

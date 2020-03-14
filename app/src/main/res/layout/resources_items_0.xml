@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+
+    <ImageView
+        android:id="@+id/Resources_Ka_Item_image0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        ></ImageView>
+
+<!--    <Button-->
+<!--        android:id="@+id/btGooRes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:text="Go"-->
+<!--        android:background="@drawable/button3"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@drawable/black_gradient" />
+
+    <TextView
+        android:id="@+id/resourcesKa_item_Name0"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <!--        <TextView-->
+<!--            android:id="@+id/resourcesKa_item_Name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:text="Name"-->
+<!--            android:textColor="#0D0D25"-->
+<!--            android:textSize="20sp"></TextView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
