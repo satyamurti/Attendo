@@ -43,7 +43,6 @@ public class Resources0 extends AppCompatActivity implements Recylerview_resours
         customLoadingBar.startLoader();
 
         mRecyclerView = findViewById(R.id.resources_recylerview);
-        mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         mUploads = new ArrayList<>();
@@ -60,27 +59,27 @@ public class Resources0 extends AppCompatActivity implements Recylerview_resours
                     ResoursesUpload0 upload = new ResoursesUpload0();
                     upload.setName(postSnapshot.getKey());
                     //   getImageurl(firebaseCallback,postSnapshot.getKey());
-                    getImageurl(new FirebaseCallback() {
-                        @Override
-                        public void onCallback(String urlv) {
-                            Log.d(TAG, "onDataChange: ImageUrls are here  " + urlv);
-                            upload.setImageUrl(urlv);
-                        }
+                    getImageurl(urlv -> {
+                        Log.d(TAG, "onDataChange: ImageUrls are here  " + urlv);
+                        upload.setImageUrl(urlv);
+                        mUploads.add(upload);
+                        mAdapter.notifyDataSetChanged();
+                        setadapter(mUploads);
                     }, postSnapshot.getKey());
-                    final Handler handler = new Handler();
+/*                    final Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            mUploads.add(upload);
+
                         }
                     }, 20);
                     if (count1 == 1) {
                         Log.d(TAG, "onDataChange: count will be 1 yes or no check , is  "+ count1);
-                        setadapter(mUploads);
 
                         break;
                     }
                     count1 = count1 - 1;
+                    */
                 }
             }
             @Override
@@ -90,6 +89,13 @@ public class Resources0 extends AppCompatActivity implements Recylerview_resours
                 Toast.makeText(Resources0.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        mAdapter = new Recylerview_resourses0(Resources0.this, mUploads, this);
+        mRecyclerView.setAdapter(mAdapter);
+        Toast.makeText(this, "Please Swipe Down to Notification Once :)", Toast.LENGTH_SHORT).show();
+        //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        customLoadingBar.dismissLoader();
+
     }
 
 
@@ -115,12 +121,7 @@ public class Resources0 extends AppCompatActivity implements Recylerview_resours
 
 
     private void setadapter(List<ResoursesUpload0> mUploads) {
-        mAdapter = new Recylerview_resourses0(Resources0.this, mUploads, this);
-        mRecyclerView.setAdapter(mAdapter);
-        Toast.makeText(this, "Please Swipe Down to Notification Once :)", Toast.LENGTH_SHORT).show();
-        mAdapter.notifyDataSetChanged();
-        //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        customLoadingBar.dismissLoader();
+
     }
 
     @Override
